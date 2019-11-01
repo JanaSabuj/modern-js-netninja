@@ -141,6 +141,26 @@ console.log(ninjas);
 ninjas.pop();// this method pops the last element and RETURNS the popped value
 console.log(ninjas);
 
+//--------------------------------------------------------------------------------
 
+//----------------NULL + UNDEFINED-------------------------------------------
+let qwerty;
+
+console.log(qwerty, qwerty + 3, `The age is ${qwerty}`);
+
+let value = null;
+console.log(value, value + 3, `The val is ${value}`); // null + 3 = 3
+
+// ---------------------------BOOLEANS + COMPARATORS -----------------
+
+let em = 'sjsj@gmail.com';
+let res = em.includes('gmail');
+console.log(res);
+
+let ar = ninjas;
+res = ar.includes('harry');
+console.log(res);
+
+console.log(em == 'harry@gmail.com');
 
 
