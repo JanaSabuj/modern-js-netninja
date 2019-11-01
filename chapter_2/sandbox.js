@@ -28,7 +28,7 @@ Symbol - Used with objects
 
 */
 
-//  Strings
+// --------------------------------- Strings
 let email = 'sabujlovescoding@gmail.com';
 console.log(email);
 
@@ -75,3 +75,20 @@ console.log(sub);
 // replace
 let rep = email.replace('s', 'w'); // replaces the first occurence of 's'
 console.log(rep);
+
+//---------------------------------------------NUMBERS-----------
+let radius = 10;
+let pi = 3.14;
+
+let area = pi * radius**2;
+console.log(area);
+
+// B I D M A S where I -> Indices(**)
+
+// likes++;
+// likes += 10;
+
+// NaN - Not a Number
+
+console.log( 5 / 'hello');
+
