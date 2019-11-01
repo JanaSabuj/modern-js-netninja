@@ -28,3 +28,34 @@ Symbol - Used with objects
 
 */
 
+//  Strings
+let email = 'sabujlovescoding@gmail.com';
+console.log(email);
+
+// Concat
+let fN = 'Sabuj';
+let lN = 'Jana';
+
+let fullN = fN + ' ' + lN;
+console.log(fullN);
+
+// Getting characters
+console.log(fullN[4]);
+
+// VSCODE - CTRL + ALT + CAPSLOCK + NUMPAD ARROWS = WINDOW RESIZE QUARTER
+
+// String LENGTH - it is a property of string object and not a function/method
+console.log(fullN.length);
+
+// --------------String METHODS - actual functions that are a part of the string object
+// end with ()
+
+// toUpperCase() D.N modify the original string
+let result  =fullN.toUpperCase();
+console.log(result, fullN);
+
+
+// indexOf()
+
+let idx = email.indexOf('@'); // '@' is called the argument
+console.log(idx);
