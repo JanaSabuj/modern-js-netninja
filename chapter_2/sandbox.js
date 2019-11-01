@@ -170,5 +170,16 @@ console.log(age == '25');// true bcoz typecasting occurs and then equality check
 // ask is age === '25' ?
 console.log(age === '25');// false bcoz of datatype mismatch
 
+// ----------------------------TYPE CONVERSIONS-----------------------------
 
+let num = '25';
+num = Number(num); // explicit typecast
+console.log(num + 5, typeof num);
 
+num = 25;
+num = String(num);
+console.log(num + 5, typeof num);
+
+num = Boolean(100);
+num = Boolean('s');
+console.log(num, typeof num);
