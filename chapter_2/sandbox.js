@@ -92,3 +92,25 @@ console.log(area);
 
 console.log( 5 / 'hello');
 
+// -------------------TEMPLATE STRINGS -------------------------------
+let name = 'Fifty Shades';
+let author = 'E L James';
+let likes = 100;
+
+// Normal Concat
+let ans = 'The book ' + name + ' by author ' + author + ' has garnered ' + likes + ' likes';
+console.log(ans);
+
+// Template
+let temp = `The book ${name} by author ${author} has garnered ${likes} likes`;
+console.log(temp);
+
+// html templates
+let tg = `
+    <h1> Hello ${name} </h1>  
+    <p> ${author} </p>
+    <span> ${likes} </span>
+`;
+
+console.log(tg);
+
