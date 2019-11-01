@@ -4,3 +4,5 @@
 > Ninja on Udemy
 
 * The entire course is divided into chapters with appropriate JS codes in **sandbox.js** file
+
+* chapter_2 ---> JavaScript Basics
