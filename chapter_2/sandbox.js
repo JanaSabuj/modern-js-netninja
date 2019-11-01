@@ -59,3 +59,19 @@ console.log(result, fullN);
 
 let idx = email.indexOf('@'); // '@' is called the argument
 console.log(idx);
+
+let lastIdx = email.lastIndexOf('s');
+console.log(lastIdx);
+
+// let slc = email.slice(1, 6);
+// let slc = email.slice(1, 4); // excluding the last index
+let slc = email.slice(email.indexOf('@') + 1, email.length);
+console.log(slc);
+
+// substr
+let sub = email.substr(1, 5); // start-idx to len
+console.log(sub);
+
+// replace
+let rep = email.replace('s', 'w'); // replaces the first occurence of 's'
+console.log(rep);
