@@ -113,4 +113,34 @@ let tg = `
 `;
 
 console.log(tg);
+// ------------------------------------------
+
+// ---------------------ARRAYS--------------------------
+let ninjas = ['harry', 'ron', 'hermione', 'neville'];
+ninjas[3] = 'voldemort';
+
+console.log(ninjas);
+console.log(ninjas.length);
+
+// JOIN
+let s1 = ninjas.join('>');
+console.log(s1);
+
+// indexOf
+let p1 = ninjas.indexOf('ron');
+console.log(p1); 
+
+// ARR CONCAT
+let tmp = ninjas.concat(['hagrid', 'filch']);
+console.log(tmp, ninjas);
+
+// push
+ninjas.push('hagrid'); // this method pushes in the original array and RETURNS the new length
+console.log(ninjas); 
+
+ninjas.pop();// this method pops the last element and RETURNS the popped value
+console.log(ninjas);
+
+
+
 
