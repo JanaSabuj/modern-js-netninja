@@ -163,4 +163,12 @@ console.log(res);
 
 console.log(em == 'harry@gmail.com');
 
+// -------------------------LOOSE VS STRICT COMPARISONS---------------------------------
+age = 25;
+console.log(age == '25');// true bcoz typecasting occurs and then equality checked
+
+// ask is age === '25' ?
+console.log(age === '25');// false bcoz of datatype mismatch
+
+
 
