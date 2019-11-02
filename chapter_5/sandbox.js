@@ -73,6 +73,33 @@ user.marks = [
 
 user.logMarks();
 
+// Math Object
+console.log(Math);
 
+const area = 7.7;
 
+console.log(Math.round(area)); // normal round
+console.log(Math.floor(area)); // below
+console.log(Math.ceil(area)); // upper
+console.log(Math.trunc(area)); // ignore decimal
+
+const random = Math.random();// b/w 0 to 1
+console.log(Math.round(random * 100));// random no b/w 0 and 100
+
+// Imp. *****primitves vs references******
+//Primitives on Stack
+let x = 10;
+let y = x;
+y = y + 2;
+console.log(x, y); // 10 12
+
+//References on Heap
+
+const user1 = { name: 'ryu', marks: 20};
+const user2 = user1;
+
+console.log(user1, user2);
+
+user1.marks = 50;
+console.log(user1, user2);// both are changed, NOT just user1
 
