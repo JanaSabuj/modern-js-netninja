@@ -79,7 +79,7 @@ langs.forEach((val, index) => {
 // intrct with DOM
 
 const ul = document.querySelector('.trend');
-
+console.log(ul); // basically gets the HTML tag
 let apndHtml = ``;
 
 langs.forEach((val) => {
