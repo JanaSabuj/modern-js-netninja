@@ -37,3 +37,19 @@ console.log(errs);// HTML COLLECTION - we cannot use forEach method here unlike 
 const ps = document.getElementsByTagName('p');
 console.log(ps);// HTMLCollection
 console.log(ps[1]);// HTMLCollection
+
+// grabbing text and changing it with innerText
+const h1 = document.querySelector('#title');
+console.log(h1.innerText);// innerText method
+
+// h1.innerText = 'hello guys';// replace
+h1.innerText += ' hello guys';// append
+
+const paragraphs = document.querySelectorAll('p');
+paragraphs.forEach((para) => {
+    para.innerText += ' done';
+});
+
+const uniqueDiv = document.querySelector('body > div.error > div');
+// console.log(uniqueDiv.innerHTML);
+uniqueDiv.innerHTML += `<p> Harry </p>`
