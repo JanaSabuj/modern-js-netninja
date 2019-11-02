@@ -75,3 +75,17 @@ let langs = ['c/c++', 'js', 'python', 'go'];
 langs.forEach((val, index) => {
     console.log(index, val);
 });
+
+// intrct with DOM
+
+const ul = document.querySelector('.trend');
+
+let apndHtml = ``;
+
+langs.forEach((val) => {
+    apndHtml += `<li style= "color: red"> ${val}</li>`;
+});
+
+console.log(apndHtml);
+
+ul.innerHTML = apndHtml;
