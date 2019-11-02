@@ -10,3 +10,6 @@
 
 * chapter_3
   > Control Flow
+
+* chapter_4
+  > Functions and Methods
