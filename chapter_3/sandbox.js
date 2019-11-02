@@ -12,3 +12,20 @@ for(let i = 0; i < ar.length; i++){
     `;
     console.log(html);
 }
+
+// -------------------------if
+
+if(ar.length > 2){
+    console.log('Good Array');
+}else if (Array.length == 2){
+    console.log('Bad Array');
+}else{
+    console.log('Worst Array');
+}
+
+// -----------logical AND(&&) OR(||)
+
+if(ar.length > 2 && ar.includes('mario')){
+    console.log('Hello Mario with Good Array');
+}
+
