@@ -28,10 +28,20 @@ speak();
 
 // ---------------argument -> in fn call   parameter -> in fn declaration
 
-const wish = function(time = 'night', name = 'sabuj'){
+const wish = function(time = 'night', name = 'sabuj'){ // called parameters here
     console.log(`Good ${time} ${name}`);
 };
 
 wish();
-wish('morn', 'agneyee');
+wish('morn', 'agneyee');// called arguments here
+
+// -------------- return values from functions
+const calcArea = function(radius){
+    return 3.14 * radius**2;
+};
+
+const area = calcArea(10);
+console.log(area);
+
+
 
