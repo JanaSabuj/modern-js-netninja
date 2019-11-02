@@ -61,4 +61,12 @@ link.setAttribute('href', 'https://github.com/JanaSabuj'); // set attribute requ
 link.setAttribute('style', 'color: green');// adding a new Attribute
 
 
+// changing CSS Styles
+const tit = document.querySelector('h1');
+console.log(tit.style);// CSSDeclaration
+
+tit.style.color = 'orange';
+tit.style.border = 20;
+tit.style.fontSize = 60;
+
 
