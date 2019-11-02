@@ -52,4 +52,13 @@ paragraphs.forEach((para) => {
 
 const uniqueDiv = document.querySelector('body > div.error > div');
 // console.log(uniqueDiv.innerHTML);
-uniqueDiv.innerHTML += `<p> Harry </p>`
+uniqueDiv.innerHTML += `<p> Harry </p>`;
+
+// getting and setting attributes
+const link = document.querySelector('body > a');
+console.log(link.getAttribute('href'));// get the attribute
+link.setAttribute('href', 'https://github.com/JanaSabuj'); // set attribute requires 2 args
+link.setAttribute('style', 'color: green');// adding a new Attribute
+
+
+
