@@ -183,3 +183,4 @@ console.log(num + 5, typeof num);
 num = Boolean(100);
 num = Boolean('s');
 console.log(num, typeof num);
+
