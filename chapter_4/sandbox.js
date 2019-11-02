@@ -43,5 +43,20 @@ const calcArea = function(radius){
 const area = calcArea(10);
 console.log(area);
 
+// ARROW FUNCTIONS
+const vol = (radius) => {
+    return 4/3 * 3.14 * radius**3;
+};
+
+//  for one arg, one return
+// const vol = radius => 4/3 * 3.14 * radius**3;
+
+console.log('vol is ', vol(10));
+
+const wishMe = () => {
+    return 'hello world Sabuj';
+};
+
+console.log(wishMe());
 
 
