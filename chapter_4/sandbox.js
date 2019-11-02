@@ -27,11 +27,9 @@ speak();
 */
 
 // ---------------argument -> in fn call   parameter -> in fn declaration
-
 const wish = function(time = 'night', name = 'sabuj'){ // called parameters here
     console.log(`Good ${time} ${name}`);
 };
-
 wish();
 wish('morn', 'agneyee');// called arguments here
 
@@ -39,7 +37,6 @@ wish('morn', 'agneyee');// called arguments here
 const calcArea = function(radius){
     return 3.14 * radius**2;
 };
-
 const area = calcArea(10);
 console.log(area);
 
@@ -50,9 +47,7 @@ const vol = (radius) => {
 
 //  for one arg, one return
 // const vol = radius => 4/3 * 3.14 * radius**3;
-
 console.log('vol is ', vol(10));
-
 const wishMe = () => {
     return 'hello world Sabuj';
 };
@@ -61,7 +56,22 @@ console.log(wishMe());
 
 // Functions vs Methods
 // Methods are funcs which are defined on an object
-
 console.log('shaun'.toUpperCase()); // a method defined on a string object
 
 
+// ----------------- callBacks and ForEach -------------------------
+// callbackF - func passed as an argument to another function
+const myFunc = (callBack) => {
+    let x = 20;
+    callBack(20);
+};
+
+myFunc((x) => {
+ console.log('Im the callback ', x);
+});
+
+// forEach method expects a callback function
+let langs = ['c/c++', 'js', 'python', 'go'];
+langs.forEach((val, index) => {
+    console.log(index, val);
+});
