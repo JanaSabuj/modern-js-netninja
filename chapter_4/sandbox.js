@@ -59,4 +59,9 @@ const wishMe = () => {
 
 console.log(wishMe());
 
+// Functions vs Methods
+// Methods are funcs which are defined on an object
+
+console.log('shaun'.toUpperCase()); // a method defined on a string object
+
 
