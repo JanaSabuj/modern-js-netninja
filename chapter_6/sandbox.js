@@ -25,3 +25,15 @@ paras.forEach((para, index) => {
 
 const errors = document.querySelectorAll('.error');
 console.log(errors);
+
+// Other methods to get elements by ID,Class etc
+const title = document.getElementById('title');
+title.style.color = 'red';
+console.log(title);
+
+const errs = document.getElementsByClassName('error');
+console.log(errs);// HTML COLLECTION - we cannot use forEach method here unlike NodeList
+
+const ps = document.getElementsByTagName('p');
+console.log(ps);// HTMLCollection
+console.log(ps[1]);// HTMLCollection

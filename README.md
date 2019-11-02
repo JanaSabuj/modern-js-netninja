@@ -16,3 +16,6 @@
 
 * chapter_5
   > Objects
+
+* chapter_6
+  > DOM
