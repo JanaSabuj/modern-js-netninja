@@ -13,3 +13,6 @@
 
 * chapter_4
   > Functions and Methods
+
+* chapter_5
+  > Objects
