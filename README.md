@@ -7,3 +7,6 @@
 
 * chapter_2
   > JavaScript Basics
+
+* chapter_3
+  > Control Flow
