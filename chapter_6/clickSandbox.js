@@ -45,3 +45,17 @@ ul.addEventListener('click', (e) => {
         e.target.remove();
     }
 });
+
+// copy event
+const copy = document.querySelector('.copy-me');
+copy.addEventListener('copy', (e) => {
+    console.log(' Hey you ! This is copyrighted content!!!');
+    console.log(e);
+});
+
+//mousemove element
+const box = document.querySelector('.box');
+box.addEventListener('mousemove', (e) => {
+    console.log(e.offsetX, e.offsetY);
+    box.textContent = `x pos - ${e.offsetX}, y pos - ${e.offsetY}`;
+});
