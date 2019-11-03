@@ -26,5 +26,8 @@
 * chapter_7
   > Forms and Form Events
 
+* chapter_8
+  > Ninja Quiz (Project 1)
+
 * chapter_9
   > Array Methods
