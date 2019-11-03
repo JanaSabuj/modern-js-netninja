@@ -19,14 +19,29 @@ button.addEventListener('click', () => {
 const items = document.querySelectorAll('li');
 console.log(items);
 
-items.forEach( (item) => {
-    item.addEventListener('click', (e) => {
-        // console.log('item has been clicked');
-        console.log(e.target);
-        e.target.style.textDecoration = 'line-through';
-        e.target.remove();// REMOVE from the DOM
-    });
-});
+// items.forEach( (item) => {
+//     item.addEventListener('click', (e) => {
+//         // console.log('item has been clicked');
+//         e.stopPropagation();// stop event bubbling
+//         console.log('Event in LI');
+//         console.log(e.target);
+//         e.target.style.textDecoration = 'line-through';
+//         e.target.remove();// REMOVE from the DOM
+//     });
+// });
 
 // but the drawback till now is the fact that new todos cannot be deleted because they have no clicklisteners
 // for that, we need event delegation
+
+/*
+Event Bubbling - whenever a child has a eventlistener fired up, the event then bubbles up to the parents to see 
+if the parents have any evenets and simultaneously fires them
+*/
+
+// event delegation - transfer children events to the parent
+ul.addEventListener('click', (e) => {
+    console.log('Event in UL');// this is fired if any li is also clicked
+    if(e.target.tagName === 'LI'){
+        e.target.remove();
+    }
+});
