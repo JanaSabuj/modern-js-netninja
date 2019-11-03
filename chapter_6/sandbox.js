@@ -80,3 +80,14 @@ content.classList.add('success');
 
 content.classList.toggle('failure');// gives failure class
 content.classList.toggle('failure');// removes it
+
+// parents, children and siblings
+const article = document.querySelector('article');
+console.log(article.children);// htmlcollection
+console.log(Array.from(article.children));// convert to array
+
+//chaining
+console.log(article.parentElement.parentElement);// find parent methods
+
+console.log(article.previousElementSibling);// next sibling
+console.log(article.nextElementSibling);
