@@ -22,11 +22,40 @@ form.addEventListener('submit', (e) => {
     });
     // console.log(score);
     // display the result
-
-    result.querySelector('span').textContent = `${score}%`;
+    scrollTo(0,0);
     result.classList.remove('d-none');
 
+    let output = 0;
+    const timer = setInterval(() => {
+        result.querySelector('span').textContent = `${output}%`;
+        if(output === score)
+            clearInterval(timer);// stop the timer
+            output++;
+    }, 50);
+    
+
 });
+
+// window object (global object)
+console.log('hello');// window is implied
+window.console.log('hello');
+
+console.log(window.document.querySelector('p'));
+// window.alert('hello');
+
+setTimeout(() => {
+    console.log('Fire this up after 3 ms');
+}, 3000);
+
+
+let i = 0;
+const timer = setInterval(() => {
+    console.log('Fire this EVERY 1 s');
+    i++;
+    if(i == 5)
+        clearInterval(timer);// stop the timer
+}, 1000);
+
 
 
 
