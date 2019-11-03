@@ -56,3 +56,24 @@ const firstHighMoney = money.find((x) => {
     return x > 50;
 });;
 console.log(firstHighMoney);
+
+// sort
+// strings
+const names = ['harry', 'ron', 'hermione', 'chun-li'];
+names.sort();
+names.reverse();
+console.log(names);
+
+// numebers - weird
+const nums = [10,20,30,3,40,50];
+// nums.sort();// sorts only by the first LHS digits
+nums.sort((a,b) => {
+    return  a - b ;// does not return a boolean, returns positive,neg or 0
+});
+console.log(nums);
+
+// objs
+scores.sort((a,b) => {
+    return b.score - a.score;// +1 if b is to be returned, -1 if a, 0 if equal
+});
+
