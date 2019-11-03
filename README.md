@@ -22,3 +22,6 @@
 
 * chapter_6
   > DOM
+
+* chapter_7
+  > Forms and Form Events
