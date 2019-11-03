@@ -1,6 +1,7 @@
 console.log('Form has been inititated');
 // when we submit a form, the page refreshes by default
 // we can prevent that by using prevent default event
+const usernamePattern = /^[a-zA-Z]{6,12}$/;
 
 const form = document.querySelector('.signup-form');
 const feedback = document.querySelector('.feedback');
@@ -15,7 +16,7 @@ form.addEventListener('submit', (e) => {
 
     //validation
     const username = form.username.value;
-    const usernamePattern = /^[a-zA-Z]{6,12}$/;
+    
 
     if(usernamePattern.test(username)){
         // pass!
@@ -45,3 +46,20 @@ if(result){
 
 let result2 = uname.search(pattern);
 console.log(result2);// prints the string position where the match has been found
+
+// keyboard words - live validation feedback
+console.log(form.username);
+form.username.addEventListener('keyup', (e) => {
+    console.log(e); // can also check for cases if alt and shift key were pressed
+    console.log(e.target.value, form.username.value);
+    if(usernamePattern.test(e.target.value)){
+        console.log('passing...');// live feedback in console
+        // form.username.classList.add('success');// wrong to do bcoz it adds attribute not overwrite
+        form.username.setAttribute('class', 'success');
+
+    }else{
+        console.log('failed');
+        // form.username.classList.add('success');
+        form.username.setAttribute('class', 'error');
+    }
+});
