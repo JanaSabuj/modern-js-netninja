@@ -25,3 +25,6 @@
 
 * chapter_7
   > Forms and Form Events
+
+* chapter_9
+  > Array Methods
