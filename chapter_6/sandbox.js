@@ -52,7 +52,7 @@ paragraphs.forEach((para) => {
 
 const uniqueDiv = document.querySelector('body > div.error > div');
 // console.log(uniqueDiv.innerHTML);
-uniqueDiv.innerHTML += `<p> Harry </p>`;
+// uniqueDiv.innerHTML += `<p> Harry </p>`;
 
 // getting and setting attributes
 const link = document.querySelector('body > a');
@@ -69,4 +69,14 @@ tit.style.color = 'orange';
 tit.style.border = 20;
 tit.style.fontSize = 60;
 
+// change classes
+const content = document.querySelector('body > div.error');
+console.log(content.classList);// DOMTokenList
+content.classList.remove('error');
+content.classList.add('success');
 
+// para.innerText gets us all the VISIBLE text
+// para.textContent gets us all the text 
+
+content.classList.toggle('failure');// gives failure class
+content.classList.toggle('failure');// removes it
